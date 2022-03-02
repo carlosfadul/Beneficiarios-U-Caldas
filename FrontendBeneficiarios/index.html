@@ -19,16 +19,16 @@
         <form class="row g-3 needs-validation" novalidate>
 
             <div class="col-md-2">
-                <label for="validacionIdentificacion" class="form-label">Documento</label>
-                <input type="text" class="form-control" id="validacionIdentificacion" required>
+                <label for="txtIdentificacion" class="form-label">Documento</label>
+                <input type="text" class="form-control" id="txtIdentificacion" required>
                 <div class="invalid-feedback">
                     Ingrese el documento
                 </div>
             </div>
 
             <div class="col-md-2">
-                <label for="validacionIgualMinTic" class="form-label">Igual a MinTic</label>
-                <select class="form-select" id="validacionIgualMinTic" required>
+                <label for="txtIgualMinTic" class="form-label">Igual a MinTic</label>
+                <select class="form-select" id="txtIgualMinTic" required>
                    
                     <option>Si</option>
                     <option>No</option>
@@ -39,24 +39,22 @@
             </div>
 
             <div class="col-md-2">
-                <label for="validacionFechaNac" class="form-label">Fecha Nacimiento</label>
-                <input type="text" class="form-control" id="validacionFechaNac" required>
+                <label for="txtFechaNac" class="form-label">Fecha Nacimiento</label>
+                <input type="text" class="form-control" id="txtFechaNac" required>
                 <div class="invalid-feedback">
                     Ingrese Fecha de Nacimiento
                 </div>
             </div>
 
             <div class="col-md-2">
-                <label for="validacionMayor15" class="form-label">Mayor 15 Años</label>
-                <input type="text" class="form-control" id="validacionMayor15" required>
-                <div class="invalid-feedback">
-                    Ingrese Si o No
-                </div>
+                <label for="txtMayor15" class="form-label">Mayor 15 Años</label>
+                <input type="text" class="form-control" id="txtMayor15">
+                
             </div>
 
             <div class="col-md-2">
-                <label for="validacionColombiano" class="form-label">Colombiano</label>
-                <select class="form-select" id="validacionColombiano" required>
+                <label for="txtColombiano" class="form-label">Colombiano</label>
+                <select class="form-select" id="txtColombiano" required>
                    
                     <option>Si</option>
                     <option>No</option>
@@ -67,8 +65,8 @@
             </div>
 
             <div class="col-md-2">
-                <label for="validacionBachiller" class="form-label">Bachiller</label>
-                <select class="form-select" id="validacionBachiller" required>
+                <label for="txtBachiller" class="form-label">Bachiller</label>
+                <select class="form-select" id="txtBachiller" required>
                    
                     <option>Si</option>
                     <option>No</option>
@@ -79,31 +77,37 @@
             </div>
 
             <div class="col-md-2">
-                <label for="validacionCumple" class="form-label">Cumple Requisitos</label>
-                <input type="text" class="form-control" id="validacionCumple" required>
-                <div class="invalid-feedback">
-                    Ingrese Si o No
-                </div>
+                <label for="txtCumple" class="form-label">Cumple Requisitos</label>
+                <input type="text" class="form-control" id="txtCumple">
+                
             </div>
             
             <div class="col-md-2">
-                <label for="validacionRevisor" class="form-label">Revisado por</label>
-                <input type="text" class="form-control" id="validacionRevisor" required>
+                <label for="txtRevisor" class="form-label">Revisado por</label>
+                <input type="text" class="form-control" id="txtRevisor" required>
                 <div class="invalid-feedback">
                     Ingrese el nombre de la persona que revisó
                 </div>
             </div>
            
             <div class="col-md-8">
-                <label for="validacionObservaciones" class="form-label">Observaciones</label>
-                <input type="text" class="form-control" id="validacionObservaciones" required>
+                <label for="txtObservaciones" class="form-label">Observaciones</label>
+                <input type="text" class="form-control" id="txtObservaciones" required>
                 <div class="invalid-feedback">
                     Ingrese las observaciones
                 </div>
             </div>
            
-            <div class="col-12">
+            <div class="col-2">
+                <input class="btn btn-primary" type="button" value="Validar" onclick="Validar()" />
+            </div>
+
+            <div class="col-2">
                 <button class="btn btn-primary" type="submit">Agregar</button>
+            </div>
+
+            <div class="col-2">
+                <button class="btn btn-primary" type="reset">Limpiar</button>
             </div>
 
             
