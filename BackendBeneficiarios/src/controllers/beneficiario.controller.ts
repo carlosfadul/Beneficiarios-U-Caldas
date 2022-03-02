@@ -73,8 +73,9 @@ export class BeneficiarioController {
   async find(
     @param.filter(Beneficiario) filter?: Filter<Beneficiario>,
   ): Promise<Beneficiario[]> {
+    
     return this.beneficiarioRepository.find(filter);
-  }
+  } 
 
   @patch('/beneficiarios')
   @response(200, {
